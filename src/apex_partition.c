@@ -1,0 +1,20 @@
+/*
+ * partition.c
+ *
+ *  Created on: Jan 27, 2022
+ *      Author: hakan.keskin
+ */
+
+#include "include/apex/partition.h"
+
+void GET_PARTITION_STATUS (PARTITION_STATUS_TYPE *PARTITION_STATUS,
+		RETURN_CODE_TYPE *RETURN_CODE )
+{
+	*RETURN_CODE = NOT_AVAILABLE;
+}
+
+void SET_PARTITION_MODE (OPERATING_MODE_TYPE OPERATING_MODE,
+		RETURN_CODE_TYPE *RETURN_CODE )
+{
+	*RETURN_CODE = NOT_AVAILABLE;
+}

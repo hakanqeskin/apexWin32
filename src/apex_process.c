@@ -1,0 +1,22 @@
+/*
+ * process.c
+ *
+ *  Created on: Jan 27, 2022
+ *      Author: hakan.keskin
+ */
+
+
+#include "include/apex/process.h"
+
+void CREATE_PROCESS (PROCESS_ATTRIBUTE_TYPE *ATTRIBUTES,
+		PROCESS_ID_TYPE *PROCESS_ID,
+		RETURN_CODE_TYPE *RETURN_CODE )
+{
+	*RETURN_CODE = NOT_AVAILABLE;
+}
+
+void START (PROCESS_ID_TYPE PROCESS_ID,
+		RETURN_CODE_TYPE *RETURN_CODE )
+{
+	*RETURN_CODE = NOT_AVAILABLE;
+}
