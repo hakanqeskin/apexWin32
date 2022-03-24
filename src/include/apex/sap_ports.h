@@ -31,11 +31,6 @@ typedef NAME_TYPE SAP_PORT_NAME_TYPE;
 
 typedef APEX_INTEGER SAP_PORT_ID_TYPE;
 
-#ifndef APEX_UNSIGNED_SHORT
-/* Implementation dependent*/
-typedef unsigned short int APEX_UNSIGNED_SHORT;/* 16-bit unsigned integer */
-#endif
-
 typedef struct SAP_ADDRESS_TYPE {
 	APEX_BYTE Addr_Length; /* structure size */
 	APEX_BYTE Addr_Type; /* address type */

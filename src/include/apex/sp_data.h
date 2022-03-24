@@ -35,17 +35,7 @@ extern "C" {
 ** with the standard definition, in size, structure, and behavior.
 */
 
-typedef char APEX_CHAR; /* 8-bit signed integer */
 
-typedef short int APEX_SHORT_INTEGER ; /* 16-bit signed integer */
-
-typedef unsigned short int APEX_WORD ; /* 16-bit unsigned integer */
-
-typedef unsigned long long APEX_UNSIGNED_LONG ; /* 64-bit unsigned integer */
-
-typedef float APEX_FLOAT ; /* 32-bit float */
-
-typedef double APEX_DOUBLE ; /* 64-bit float */
 
 /*
 ** Enumerated values.
@@ -75,17 +65,6 @@ typedef struct {
 #define FUNCTIONAL_TEST 0x0C
 #define NO_COMPUTED_DATA 0x30
 
-/*
-** String data type.
-** There is not a generalized form of the APEX string type that is
-** expressible as a C typedef. For a string of a given length,
-** a structure should be defined similar to this example:
-*/
-
-typedef struct {
-	APEX_WORD length;
-	APEX_CHAR data[MAX_NAME_LENGTH]; /* length of specific string */
-} APEX_STRING;
 
 #ifdef __cplusplus
 }

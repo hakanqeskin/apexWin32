@@ -30,8 +30,6 @@ typedef enum {
 	NORMAL = 3
 } OPERATING_MODE_TYPE;
 
-typedef APEX_INTEGER PARTITION_ID_TYPE;
-
 typedef enum {
 	NORMAL_START = 0,
 	PARTITION_RESTART = 1,

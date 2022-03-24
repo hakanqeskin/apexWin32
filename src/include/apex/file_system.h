@@ -42,27 +42,27 @@
 
 /* ERRNO Error codes */
 /* The values defined by the ERRNO constants are implementation dependent */
-#define APEX_EPERM 1 /* Operation not permitted */
-#define APEX_ENOENT 2 /* No such file or directory */
-#define APEX_EIO 5 /* Input/output error */
-#define APEX_EBADF 9 /* Bad file descriptor */
-#define APEX_EACCES 13 /* Permission denied */
+#define EPERM 1 /* Operation not permitted */
+#define ENOENT 2 /* No such file or directory */
+#define EIO 5 /* Input/output error */
+#define EBADF 9 /* Bad file descriptor */
+#define EACCES 13 /* Permission denied */
 
-#define APEX_EBUSY 16 /* Resource busy */
-#define APEX_EEXIST 17 /* File exists */
-#define APEX_ENOTDIR 20 /* Not a volume or directory */
-#define APEX_EISDIR 21 /* Is a directory */
-#define APEX_EINVAL 22 /* Invalid argument */
-#define APEX_EMFILE 24 /* Too many open files by the current partition */
+#define EBUSY 16 /* Resource busy */
+#define EEXIST 17 /* File exists */
+#define ENOTDIR 20 /* Not a volume or directory */
+#define EISDIR 21 /* Is a directory */
+#define EINVAL 22 /* Invalid argument */
+#define EMFILE 24 /* Too many open files by the current partition */
 
-#define APEX_EFBIG 27 /* File too large */
-#define APEX_ENOSPC 28 /* No space left on volume */
-#define APEX_EROFS 30 /* Storage device containing file is */
+#define EFBIG 27 /* File too large */
+#define ENOSPC 28 /* No space left on volume */
+#define EROFS 30 /* Storage device containing file is */
  /* currently write protected */
-#define APEX_ENAMETOOLONG 78 /* Filename too long */
-#define APEX_EOVERFLOW 79 /* Current file position beyond end of file */
-#define APEX_ENOTEMPTY 93 /* Directory not empty */
-#define APEX_ESTALE 151 /* file or directory ID which an application has been using
+#define ENAMETOOLONG 78 /* Filename too long */
+#define EOVERFLOW 79 /* Current file position beyond end of file */
+#define ENOTEMPTY 93 /* Directory not empty */
+#define ESTALE 151 /* file or directory ID which an application has been using
 is no longer valid */
 
 #ifdef __cplusplus

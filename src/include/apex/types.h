@@ -32,6 +32,10 @@
 
 #define SYSTEM_LIMIT_NUMBER_OF_QUEUING_PORTS 512 /* partition scope */
 
+#define SYSTEM_LIMIT_NUMBER_OF_BUFFERS 256 /* partition scope */
+#define SYSTEM_LIMIT_NUMBER_OF_BLACKBOARDS 256 /* partition scope */ 
+#define SYSTEM_LIMIT_NUMBER_OF_SEMAPHORES 256 /* partition scope */ 
+#define SYSTEM_LIMIT_NUMBER_OF_EVENTS 256 /* partition scope */
 #define MAX_NAME_LENGTH	30
 
 #define INFINITE_TIME_VALUE -1
@@ -49,13 +53,25 @@ extern "C" {
 /* sizes must match the sizes used by the implementation of the 	*/
 /* underlying Operating System. 									*/
 
+typedef char APEX_CHAR; /* 8-bit signed integer */
+
 typedef unsigned char APEX_BYTE; /* 8-bit unsigned */
+
+typedef short int APEX_SHORT_INTEGER; /* 16-bit signed integer */
+
+typedef unsigned short int APEX_UNSIGNED_SHORT;/* 16-bit unsigned integer */
 
 typedef long APEX_INTEGER; /* 32-bit signed */
 
 typedef unsigned long APEX_UNSIGNED; /* 32-bit unsigned */
 
 typedef long long APEX_LONG_INTEGER; /* 64-bit signed */
+
+typedef unsigned long long APEX_UNSIGNED_LONG; /* 64-bit unsigned integer */
+
+typedef float APEX_FLOAT; /* 32-bit float */
+
+typedef double APEX_DOUBLE; /* 64-bit float */
 
 /*----------------------*/
 /* General APEX types   */
@@ -84,10 +100,18 @@ typedef enum { SOURCE = 0, DESTINATION = 1 } PORT_DIRECTION_TYPE;
 
 typedef enum { FIFO = 0, PRIORITY = 1 } QUEUING_DISCIPLINE_TYPE;
 
+typedef enum { SOFT = 0, HARD = 1 } DEADLINE_TYPE;
+
 /* 64-bit signed integer with a 1 nanosecond LSB */
 typedef APEX_LONG_INTEGER SYSTEM_TIME_TYPE;
 
+typedef APEX_INTEGER PARTITION_ID_TYPE;
+
+typedef APEX_INTEGER PROCESS_ID_TYPE;
+
 typedef APEX_INTEGER WAITING_RANGE_TYPE;
+
+typedef APEX_UNSIGNED STACK_SIZE_TYPE;
 
 #ifdef __cplusplus
 }
